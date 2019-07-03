@@ -10,4 +10,13 @@ module.exports = {
     title: `Gatsby tutorial website`,
     author: `Lemire Tristan`,
   },
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    }
+  ]
 }
